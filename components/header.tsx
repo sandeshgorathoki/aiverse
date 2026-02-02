@@ -25,12 +25,12 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <Image 
               src="/Logo.png" 
-              alt="aiverse logo" 
+              alt="whitemouse AI logo" 
               width={32} 
               height={32}
               className="h-8 w-8 rounded-lg"
             />
-            <span className="text-xl font-bold text-foreground">aiverse</span>
+            <span className="text-xl font-bold text-foreground">whitemouse AI</span>
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">
