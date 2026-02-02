@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next"
 import { useState, useMemo } from "react"
 import Link from "next/link"
 import { Search, SlidersHorizontal, Grid, List, X } from "lucide-react"
@@ -26,12 +25,6 @@ import {
 } from "@/components/ui/sheet"
 import { Checkbox } from "@/components/ui/checkbox"
 import { aiTools, categories, pricingFilters, sortOptions } from "@/lib/data"
-
-export const metadata: Metadata = {
-  title: "Free AI Tools Directory – Browse & Compare AI Tools",
-  description:
-    "Browse and compare the best free AI tools for writing, images, video, coding, productivity, and business. Updated AI tools directory.",
-}
 
 export default function ToolsPage() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -189,7 +182,9 @@ export default function ToolsPage() {
                   </Button>
                 )}
               </div>
-              <FilterContent />
+              <div className="max-h-[calc(100vh-200px)] overflow-y-auto pr-2">
+                <FilterContent />
+              </div>
             </div>
           </aside>
 
