@@ -1,14 +1,15 @@
 import type { Metadata } from "next"
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string }
-}): Metadata {
-  const formatted = params.slug.replace(/-/g, " ")
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const resolvedParams = await params
+  const formatted = resolvedParams.slug.replace(/-/g, " ")
 
   // Special SEO for Writing category (Day 2 focus)
-  if (params.slug === "writing") {
+  if (resolvedParams.slug === "writing") {
     return {
       title: "AI Writing Tools – Best Tools for Content, Blogs & Copywriting",
       description:
