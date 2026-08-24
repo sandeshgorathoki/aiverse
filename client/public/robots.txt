@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mega-tools.manus.space/sitemap.xml
