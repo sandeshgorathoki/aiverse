@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unix Timestamp Converter — Epoch to Date Online | Mega Tools</title>
+<meta name="description" content="Convert Unix timestamps to human-readable dates and back. Handles seconds, milliseconds and microseconds, with UTC, local and ISO 8601 output.">
+<link rel="canonical" href="https://whitemouseai.com/tools/timestamp-converter">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mega Tools">
+<meta property="og:title" content="Unix Timestamp Converter — Epoch to Date Online | Mega Tools">
+<meta property="og:description" content="Convert Unix timestamps to human-readable dates and back. Handles seconds, milliseconds and microseconds, with UTC, local and ISO 8601 output.">
+<meta property="og:url" content="https://whitemouseai.com/tools/timestamp-converter">
+<meta property="og:image" content="https://whitemouseai.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Unix Timestamp Converter — Epoch to Date Online | Mega Tools">
+<meta name="twitter:description" content="Convert Unix timestamps to human-readable dates and back. Handles seconds, milliseconds and microseconds, with UTC, local and ISO 8601 output.">
+<meta name="twitter:image" content="https://whitemouseai.com/og.svg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+
+<script src="/assets/shell.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Timestamp Converter","url":"https://whitemouseai.com/tools/timestamp-converter","applicationCategory":"UtilitiesApplication","operatingSystem":"Any — runs in a web browser","description":"Convert Unix timestamps to human-readable dates and back. Handles seconds, milliseconds and microseconds, with UTC, local and ISO 8601 output.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"Mega Tools","url":"https://whitemouseai.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://whitemouseai.com"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://whitemouseai.com/tools"},{"@type":"ListItem","position":3,"name":"Developer Tools","item":"https://whitemouseai.com/tools/developer"},{"@type":"ListItem","position":4,"name":"Timestamp Converter","item":"https://whitemouseai.com/tools/timestamp-converter"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does the local time differ from what I expected?","acceptedAnswer":{"@type":"Answer","text":"Local conversion uses your device's time zone and its daylight-saving rules for that specific date. A timestamp from July shows a different offset than one from January in most of Europe and North America."}},{"@type":"Question","name":"Can a timestamp be negative?","acceptedAnswer":{"@type":"Answer","text":"Yes. Negative values are dates before 1970 and are handled correctly here. Some older systems and databases reject them, which is worth knowing before storing historical dates."}},{"@type":"Question","name":"What is ISO 8601?","acceptedAnswer":{"@type":"Answer","text":"A standard textual format like 2025-01-01T00:00:00.000Z. The trailing Z means UTC. Unlike a bare timestamp, it is human-readable while staying unambiguous, which makes it a good choice for logs and APIs."}},{"@type":"Question","name":"Does this account for leap seconds?","acceptedAnswer":{"@type":"Answer","text":"No, and neither does Unix time itself. Every day counts as exactly 86,400 seconds by definition."}},{"@type":"Question","name":"Why is the current time slightly off?","acceptedAnswer":{"@type":"Answer","text":"The clock reads your device. If it drifts, everything derived from it drifts too. Enabling automatic network time in your system settings fixes it."}}]}]}</script>
+</head>
+<body data-page="tool" data-tool="timestamp-converter">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MT</span>MEGA TOOLS</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/tools">All tools</a>
+      <a href="/tools/pdf">PDF</a>
+      <a href="/tools/image">Image</a>
+      <a href="/tools/developer">Developer</a>
+      <a href="/tools/calculators">Calculators</a>
+    </nav>
+    <div class="header-spacer"></div>
+    <div class="hsearch">
+      <svg class="mag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="sr-only" for="hs">Search tools</label>
+      <input type="search" id="hs" data-search-input placeholder="Search tools" autocomplete="off" spellcheck="false">
+      <span class="slash" aria-hidden="true">/</span>
+    </div>
+    <button class="icon-btn" data-theme-toggle aria-label="Switch between light, dark and system theme" title="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap tool-head">
+  <nav class="crumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/tools">Tools</a></li>
+    <li><a href="/tools/developer">Developer Tools</a></li>
+    <li><span aria-current="page">Timestamp Converter</span></li>
+  </ol>
+</nav>
+  <div class="tool-title-row">
+    <span class="th-ico" aria-hidden="true">⏱</span>
+    <div style="flex:1 1 auto;min-width:0">
+      <span class="path-chip">/tools/timestamp-converter</span>
+      <h1>Timestamp Converter</h1>
+      <p class="lede">Paste an epoch value and read it as a date, or pick a date and get the epoch. Seconds, milliseconds and microseconds are detected automatically.</p>
+    </div>
+    <button class="icon-btn fav-btn" data-fav="timestamp-converter" aria-pressed="false" aria-label="Save to favourites" title="Save to favourites"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9L3.5 9.7l5.9-.8z"/></svg></button>
+  </div>
+</div>
+
+<div class="wrap tool-layout">
+  <div>
+    <div class="panel" id="tool-panel">
+      <div class="panel-bar"><span class="dot" aria-hidden="true"></span>Timestamp Converter<span class="pb-right">Runs in your browser</span></div>
+      <div class="panel-body" id="tool-root">
+        <div class="msg msg-err" id="boot-error" hidden data-show="true" role="alert">
+          This tool could not start. It needs JavaScript enabled. If JavaScript is on, reloading the page usually fixes it.
+        </div>
+        <noscript><div class="msg msg-warn" data-show="true">This tool needs JavaScript to run. The instructions and explanations below are still readable without it.</div></noscript>
+        
+<div class="panel" style="box-shadow:none;margin-bottom:18px">
+  <div class="panel-bar"><span class="dot"></span> Current time<span class="pb-right" id="live">—</span></div>
+  <div class="panel-body" style="padding:12px 16px">
+    <table class="kv">
+      <tr><td>Unix seconds</td><td><span id="now-s">—</span> <button class="btn btn-sm btn-ghost" id="cp-s">Copy</button></td></tr>
+      <tr><td>Unix milliseconds</td><td><span id="now-ms">—</span> <button class="btn btn-sm btn-ghost" id="cp-ms">Copy</button></td></tr>
+      <tr><td>ISO 8601 (UTC)</td><td style="font-size:.85rem"><span id="now-iso">—</span></td></tr>
+    </table>
+  </div>
+</div>
+
+<h3 style="margin-top:0">Timestamp to date</h3>
+<div class="row" style="align-items:flex-end">
+  <div class="field"><label for="ts">Unix timestamp</label><input type="text" id="ts" inputmode="numeric" placeholder="1735689600" style="font-family:var(--mono)"></div>
+  <div class="field" style="flex:0 0 auto;min-width:170px"><label for="unit">Unit</label>
+    <select id="unit"><option value="auto">Detect automatically</option><option value="s">Seconds</option><option value="ms">Milliseconds</option><option value="us">Microseconds</option></select>
+  </div>
+</div>
+<div class="actions"><button class="btn btn-primary" id="go1">Convert to date</button></div>
+<div class="msg" id="msg1"></div>
+<table class="kv" id="res1" hidden style="margin-top:14px">
+  <tr><td>Local time</td><td id="r-local">—</td></tr>
+  <tr><td>UTC</td><td id="r-utc">—</td></tr>
+  <tr><td>ISO 8601</td><td id="r-iso" style="font-size:.85rem">—</td></tr>
+  <tr><td>Relative</td><td id="r-rel">—</td></tr>
+  <tr><td>Day of week</td><td id="r-dow">—</td></tr>
+</table>
+
+<h3>Date to timestamp</h3>
+<div class="row" style="align-items:flex-end">
+  <div class="field"><label for="dt">Date and time</label><input type="datetime-local" id="dt" step="1"></div>
+  <div class="field" style="flex:0 0 auto;min-width:170px"><label for="zone">Interpret as</label>
+    <select id="zone"><option value="local">Local time</option><option value="utc">UTC</option></select>
+  </div>
+</div>
+<div class="actions"><button class="btn btn-primary" id="go2">Convert to timestamp</button></div>
+<div class="msg" id="msg2"></div>
+<table class="kv" id="res2" hidden style="margin-top:14px">
+  <tr><td>Unix seconds</td><td id="r2-s">—</td></tr>
+  <tr><td>Unix milliseconds</td><td id="r2-ms">—</td></tr>
+  <tr><td>ISO 8601 (UTC)</td><td id="r2-iso" style="font-size:.85rem">—</td></tr>
+</table>
+      </div>
+    </div>
+
+    <div class="ad-slot" data-ad="tool-below-app" data-size="leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-below-app · leaderboard</div>
+</div>
+
+    <div class="prose">
+      <section aria-labelledby="h-howto">
+  <h2 id="h-howto">How to use the Timestamp Converter</h2>
+  <ol class="steps"><li>To read a timestamp: paste it into the first box and press <b>Convert to date</b>. The unit is detected from the number of digits.</li><li>To create one: pick a date, choose whether it is local time or UTC, then press <b>Convert to timestamp</b>.</li><li>The panel at the top shows the current time and can be copied with one click.</li></ol>
+</section>
+      <section aria-labelledby="h-s0"><h2 id="h-s0">What a Unix timestamp is</h2><p>A Unix timestamp counts the seconds since midnight UTC on 1 January 1970 — the Unix epoch. It has no time zone, no daylight saving and no ambiguity, which is why almost every system stores time this way and converts to local time only for display.</p>
+<p>The count deliberately ignores leap seconds. A day is always exactly 86,400 seconds, so on the rare days that carry a leap second, Unix time repeats or skips a value rather than counting it. For everything short of scientific timekeeping, this is what you want.</p></section><section aria-labelledby="h-s1"><h2 id="h-s1">Seconds, milliseconds or microseconds?</h2><p>Getting the unit wrong is the most common timestamp bug — a value in milliseconds read as seconds lands in the year 56,000. Digit count is a reliable guide for any date in living memory:</p>
+<table>
+<tr><th>Digits</th><th>Unit</th><th>Example</th><th>Used by</th></tr>
+<tr><td>10</td><td>Seconds</td><td>1735689600</td><td>Unix, PHP, Python, most APIs</td></tr>
+<tr><td>13</td><td>Milliseconds</td><td>1735689600000</td><td>JavaScript, Java</td></tr>
+<tr><td>16</td><td>Microseconds</td><td>1735689600000000</td><td>Postgres internals, some tracing systems</td></tr>
+</table>
+<p>A quick sanity check: a ten-digit timestamp starting with 17 is somewhere in the mid-2020s.</p></section><section aria-labelledby="h-s2"><h2 id="h-s2">The 2038 problem</h2><p>Systems that store Unix time in a signed 32-bit integer overflow at 03:14:07 UTC on 19 January 2038, wrapping to 1901. Modern platforms use 64-bit values and are unaffected, but embedded devices, old database columns and legacy file formats still carry the limit. If you work with dates beyond 2038 — mortgage terms, pension records, expiry dates — it is worth checking what your storage layer actually uses.</p></section>
+      <section aria-labelledby="h-faq">
+  <h2 id="h-faq">Frequently asked questions</h2>
+  <details class="faq-item">
+    <summary>Why does the local time differ from what I expected?</summary>
+    <div class="faq-a"><p>Local conversion uses your device&#39;s time zone and its daylight-saving rules for that specific date. A timestamp from July shows a different offset than one from January in most of Europe and North America.</p></div>
+  </details><details class="faq-item">
+    <summary>Can a timestamp be negative?</summary>
+    <div class="faq-a"><p>Yes. Negative values are dates before 1970 and are handled correctly here. Some older systems and databases reject them, which is worth knowing before storing historical dates.</p></div>
+  </details><details class="faq-item">
+    <summary>What is ISO 8601?</summary>
+    <div class="faq-a"><p>A standard textual format like 2025-01-01T00:00:00.000Z. The trailing Z means UTC. Unlike a bare timestamp, it is human-readable while staying unambiguous, which makes it a good choice for logs and APIs.</p></div>
+  </details><details class="faq-item">
+    <summary>Does this account for leap seconds?</summary>
+    <div class="faq-a"><p>No, and neither does Unix time itself. Every day counts as exactly 86,400 seconds by definition.</p></div>
+  </details><details class="faq-item">
+    <summary>Why is the current time slightly off?</summary>
+    <div class="faq-a"><p>The clock reads your device. If it drifts, everything derived from it drifts too. Enabling automatic network time in your system settings fixes it.</p></div>
+  </details>
+</section>
+    </div>
+
+    <div class="ad-slot" data-ad="tool-below-content" data-size="leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-below-content · leaderboard</div>
+</div>
+
+    <section aria-labelledby="h-rel">
+  <h2 id="h-rel">Related tools</h2>
+  <div class="grid grid-3"><a class="tool-tile" href="/tools/date-calculator">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">📅</span><span class="tt-name">Date Calculator</span></div>
+  <p class="tt-desc">Days between dates, or add and subtract days from a date.</p>
+  <div class="tt-path">/tools/date-calculator</div>
+</a><a class="tool-tile" href="/tools/time-zone-converter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">🌍</span><span class="tt-name">Time Zone Converter</span></div>
+  <p class="tt-desc">Convert a time between any two time zones.</p>
+  <div class="tt-path">/tools/time-zone-converter</div>
+</a><a class="tool-tile" href="/tools/time-calculator">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">⏳</span><span class="tt-name">Time Calculator</span></div>
+  <p class="tt-desc">Add, subtract and total durations in hours, minutes and seconds.</p>
+  <div class="tt-path">/tools/time-calculator</div>
+</a><a class="tool-tile" href="/tools/json-formatter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">{ }</span><span class="tt-name">JSON Formatter</span></div>
+  <p class="tt-desc">Format, indent and validate JSON with precise error locations.</p>
+  <div class="tt-path">/tools/json-formatter</div>
+</a><a class="tool-tile" href="/tools/age-calculator">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">🎂</span><span class="tt-name">Age Calculator</span></div>
+  <p class="tt-desc">Work out an exact age in years, months and days.</p>
+  <div class="tt-path">/tools/age-calculator</div>
+</a></div>
+</section>
+  </div>
+  <aside class="tool-aside" aria-label="More tools">
+  <div class="aside-card">
+    <h3>Developer Tools</h3>
+    <ul class="aside-links">
+      <li><a href="/tools/json-formatter"><span class="al-ico" aria-hidden="true">{ }</span>JSON Formatter</a></li><li><a href="/tools/json-validator"><span class="al-ico" aria-hidden="true">✓</span>JSON Validator</a></li><li><a href="/tools/base64-encoder"><span class="al-ico" aria-hidden="true">⇢</span>Base64 Encoder</a></li><li><a href="/tools/base64-decoder"><span class="al-ico" aria-hidden="true">⇠</span>Base64 Decoder</a></li><li><a href="/tools/regex-tester"><span class="al-ico" aria-hidden="true">.*</span>Regex Tester</a></li><li><a href="/tools/uuid-generator"><span class="al-ico" aria-hidden="true">⁘</span>UUID Generator</a></li><li><a href="/tools/color-converter"><span class="al-ico" aria-hidden="true">◐</span>Color Converter</a></li><li><a href="/tools/url-encoder"><span class="al-ico" aria-hidden="true">⇗</span>URL Encoder</a></li>
+      <li><a href="/tools/developer"><span class="al-ico" aria-hidden="true">→</span><strong>All 14 developer tools</strong></a></li>
+    </ul>
+  </div>
+  <div class="ad-slot" data-ad="tool-sidebar" data-size="rectangle">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-sidebar · rectangle</div>
+</div>
+  <div class="aside-card" data-shelf="recent" hidden>
+    <h3>Recently used</h3>
+    <div class="grid" data-shelf-body style="gap:8px"></div>
+  </div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="/" style="margin-bottom:10px"><span class="brand-mark" aria-hidden="true">MT</span>MEGA TOOLS</a>
+        <p>Free tools for everything you do online. 62 free tools, no sign-up, and most of them run entirely in your browser.</p>
+      </div>
+      
+    <div>
+      <h4>PDF</h4>
+      <ul><li><a href="/tools/pdf-merger">PDF Merger</a></li><li><a href="/tools/pdf-compressor">PDF Compressor</a></li><li><a href="/tools/pdf-to-jpg">PDF to JPG</a></li><li><a href="/tools/pdf-splitter">PDF Splitter</a></li><li><a href="/tools/jpg-to-pdf">JPG to PDF</a></li><li><a href="/tools/pdf-to-text">PDF to Text</a></li>
+        <li><a href="/tools/pdf"><strong>All pdf tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Image</h4>
+      <ul><li><a href="/tools/image-compressor">Image Compressor</a></li><li><a href="/tools/image-resizer">Image Resizer</a></li><li><a href="/tools/jpg-to-png">JPG to PNG</a></li><li><a href="/tools/png-to-jpg">PNG to JPG</a></li><li><a href="/tools/image-cropper">Image Cropper</a></li><li><a href="/tools/webp-converter">WebP Converter</a></li>
+        <li><a href="/tools/image"><strong>All image tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Developer</h4>
+      <ul><li><a href="/tools/json-formatter">JSON Formatter</a></li><li><a href="/tools/json-validator">JSON Validator</a></li><li><a href="/tools/base64-encoder">Base64 Encoder</a></li><li><a href="/tools/base64-decoder">Base64 Decoder</a></li><li><a href="/tools/timestamp-converter">Timestamp Converter</a></li><li><a href="/tools/regex-tester">Regex Tester</a></li>
+        <li><a href="/tools/developer"><strong>All developer tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Calculators</h4>
+      <ul><li><a href="/tools/age-calculator">Age Calculator</a></li><li><a href="/tools/percentage-calculator">Percentage Calculator</a></li><li><a href="/tools/mortgage-calculator">Mortgage Calculator</a></li><li><a href="/tools/loan-calculator">Loan Calculator</a></li><li><a href="/tools/bmi-calculator">BMI Calculator</a></li><li><a href="/tools/salary-calculator">Salary Calculator</a></li>
+        <li><a href="/tools/calculators"><strong>All calculators tools →</strong></a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="foot-grid" style="margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div>
+        <h4>Categories</h4>
+        <ul><li><a href="/tools/pdf">PDF Tools</a></li><li><a href="/tools/image">Image Tools</a></li><li><a href="/tools/developer">Developer Tools</a></li><li><a href="/tools/calculators">Calculators</a></li><li><a href="/tools/text">Text Tools</a></li><li><a href="/tools/converters">Converters</a></li><li><a href="/tools/security">Security &amp; Generators</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other</h4>
+        <ul>
+          <li><a href="/tools">All tools</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Mega Tools. Free to use.</span>
+      <span>62 tools across 7 categories · updated 2026-08-25</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/tool-runtime.js" defer></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    
+    (function () {
+    function tick() {
+      var d = new Date();
+      MT.$('#live').textContent = Intl.DateTimeFormat().resolvedOptions().timeZone || 'local';
+      MT.$('#now-s').textContent = Math.floor(d.getTime() / 1000);
+      MT.$('#now-ms').textContent = d.getTime();
+      MT.$('#now-iso').textContent = d.toISOString();
+    }
+    tick();
+    setInterval(tick, 1000);
+    MT.on('#cp-s', 'click', function (e) { MT.copy(MT.$('#now-s').textContent, e.currentTarget); });
+    MT.on('#cp-ms', 'click', function (e) { MT.copy(MT.$('#now-ms').textContent, e.currentTarget); });
+
+    function relative(ms) {
+      var diff = ms - Date.now(), past = diff < 0, a = Math.abs(diff);
+      var units = [[31536000000, 'year'], [2592000000, 'month'], [86400000, 'day'], [3600000, 'hour'], [60000, 'minute'], [1000, 'second']];
+      for (var i = 0; i < units.length; i++) {
+        if (a >= units[i][0]) {
+          var v = Math.round(a / units[i][0]);
+          return past ? MT.plural(v, units[i][1]) + ' ago' : 'in ' + MT.plural(v, units[i][1]);
+        }
+      }
+      return 'just now';
+    }
+
+    MT.on('#go1', 'click', MT.guard(function () {
+      var raw = MT.$('#ts').value.trim().replace(/[,_\s]/g, '');
+      MT.$('#res1').hidden = true;
+      if (!raw) { MT.msg('#msg1', 'Enter a timestamp.', 'warn'); return; }
+      if (!/^-?\d+(\.\d+)?$/.test(raw)) { MT.msg('#msg1', 'A timestamp must be a number. Remove any letters or symbols.', 'err'); return; }
+      var n = parseFloat(raw), unit = MT.$('#unit').value, ms;
+      var digits = raw.replace(/^-|\..*$/g, '').length;
+      if (unit === 'auto') {
+        if (digits >= 16) { unit = 'us'; } else if (digits >= 12) { unit = 'ms'; } else { unit = 's'; }
+      }
+      ms = unit === 's' ? n * 1000 : unit === 'ms' ? n : n / 1000;
+      var d = new Date(ms);
+      if (isNaN(d.getTime())) { MT.msg('#msg1', 'That value is outside the range JavaScript can represent as a date.', 'err'); return; }
+      MT.$('#r-local').textContent = d.toLocaleString(undefined, { dateStyle: 'full', timeStyle: 'medium' });
+      MT.$('#r-utc').textContent = d.toUTCString();
+      MT.$('#r-iso').textContent = d.toISOString();
+      MT.$('#r-rel').textContent = relative(ms);
+      MT.$('#r-dow').textContent = d.toLocaleDateString(undefined, { weekday: 'long' });
+      MT.$('#res1').hidden = false;
+      MT.msg('#msg1', 'Read as ' + (unit === 's' ? 'seconds' : unit === 'ms' ? 'milliseconds' : 'microseconds') + '.', 'ok');
+      MT.done({ dir: 'to-date' });
+    }));
+
+    MT.on('#go2', 'click', MT.guard(function () {
+      var v = MT.$('#dt').value;
+      MT.$('#res2').hidden = true;
+      if (!v) { MT.msg('#msg2', 'Pick a date and time.', 'warn'); return; }
+      var d = MT.$('#zone').value === 'utc' ? new Date(v + (v.length === 16 ? ':00' : '') + 'Z') : new Date(v);
+      if (isNaN(d.getTime())) { MT.msg('#msg2', 'That date could not be read. Try picking it again.', 'err'); return; }
+      MT.$('#r2-s').textContent = Math.floor(d.getTime() / 1000);
+      MT.$('#r2-ms').textContent = d.getTime();
+      MT.$('#r2-iso').textContent = d.toISOString();
+      MT.$('#res2').hidden = false;
+      MT.clearMsg('#msg2');
+      MT.done({ dir: 'to-timestamp' });
+    }));
+
+    var now = new Date(Date.now() - new Date().getTimezoneOffset() * 60000);
+    MT.$('#dt').value = now.toISOString().slice(0, 19);
+  })();
+  } catch (err) {
+    console.error('Tool failed to start:', err);
+    var box = document.getElementById('boot-error');
+    if (box) { box.hidden = false; }
+  }
+});
+</script>
+</body>
+</html>

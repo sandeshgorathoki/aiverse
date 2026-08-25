@@ -1,0 +1,8 @@
+# Mega Tools
+User-agent: *
+Allow: /
+
+# Nothing is disallowed. CSS and JavaScript must stay crawlable so that
+# search engines can render and evaluate the tool pages correctly.
+
+Sitemap: https://whitemouseai.com/sitemap.xml

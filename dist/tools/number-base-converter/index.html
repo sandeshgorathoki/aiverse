@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Number Base Converter — Binary, Hex and Decimal | Mega Tools</title>
+<meta name="description" content="Convert numbers between binary, octal, decimal, hexadecimal and any base from 2 to 36. Handles large integers exactly using arbitrary precision.">
+<link rel="canonical" href="https://whitemouseai.com/tools/number-base-converter">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mega Tools">
+<meta property="og:title" content="Number Base Converter — Binary, Hex and Decimal | Mega Tools">
+<meta property="og:description" content="Convert numbers between binary, octal, decimal, hexadecimal and any base from 2 to 36. Handles large integers exactly using arbitrary precision.">
+<meta property="og:url" content="https://whitemouseai.com/tools/number-base-converter">
+<meta property="og:image" content="https://whitemouseai.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Number Base Converter — Binary, Hex and Decimal | Mega Tools">
+<meta name="twitter:description" content="Convert numbers between binary, octal, decimal, hexadecimal and any base from 2 to 36. Handles large integers exactly using arbitrary precision.">
+<meta name="twitter:image" content="https://whitemouseai.com/og.svg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+
+<script src="/assets/shell.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Number Base Converter","url":"https://whitemouseai.com/tools/number-base-converter","applicationCategory":"UtilitiesApplication","operatingSystem":"Any — runs in a web browser","description":"Convert numbers between binary, octal, decimal, hexadecimal and any base from 2 to 36. Handles large integers exactly using arbitrary precision.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"Mega Tools","url":"https://whitemouseai.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://whitemouseai.com"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://whitemouseai.com/tools"},{"@type":"ListItem","position":3,"name":"Converters","item":"https://whitemouseai.com/tools/converters"},{"@type":"ListItem","position":4,"name":"Number Base Converter","item":"https://whitemouseai.com/tools/number-base-converter"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does hex use letters?","acceptedAnswer":{"@type":"Answer","text":"Base 16 needs sixteen distinct digit symbols, and only ten exist. A through F fill the gap, representing 10 to 15."}},{"@type":"Question","name":"Can it convert decimals or fractions?","acceptedAnswer":{"@type":"Answer","text":"No, whole numbers only. Fractions rarely terminate when converted between bases — 0.1 in decimal is infinitely repeating in binary, which is the root of most floating-point surprises."}},{"@type":"Question","name":"How large a number can it handle?","acceptedAnswer":{"@type":"Answer","text":"There is no practical limit. Arbitrary-precision arithmetic means a 512-bit value converts exactly, with no rounding or loss."}},{"@type":"Question","name":"What do the 0x and 0b prefixes mean?","acceptedAnswer":{"@type":"Answer","text":"They are programming conventions marking hexadecimal and binary literals. They are notation rather than part of the number, so they are stripped automatically."}}]}]}</script>
+</head>
+<body data-page="tool" data-tool="number-base-converter">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MT</span>MEGA TOOLS</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/tools">All tools</a>
+      <a href="/tools/pdf">PDF</a>
+      <a href="/tools/image">Image</a>
+      <a href="/tools/developer">Developer</a>
+      <a href="/tools/calculators">Calculators</a>
+    </nav>
+    <div class="header-spacer"></div>
+    <div class="hsearch">
+      <svg class="mag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="sr-only" for="hs">Search tools</label>
+      <input type="search" id="hs" data-search-input placeholder="Search tools" autocomplete="off" spellcheck="false">
+      <span class="slash" aria-hidden="true">/</span>
+    </div>
+    <button class="icon-btn" data-theme-toggle aria-label="Switch between light, dark and system theme" title="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap tool-head">
+  <nav class="crumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/tools">Tools</a></li>
+    <li><a href="/tools/converters">Converters</a></li>
+    <li><span aria-current="page">Number Base Converter</span></li>
+  </ol>
+</nav>
+  <div class="tool-title-row">
+    <span class="th-ico" aria-hidden="true">01</span>
+    <div style="flex:1 1 auto;min-width:0">
+      <span class="path-chip">/tools/number-base-converter</span>
+      <h1>Number Base Converter</h1>
+      <p class="lede">Convert integers between any two bases from 2 to 36. Large values are handled with arbitrary precision, so nothing is silently rounded.</p>
+    </div>
+    <button class="icon-btn fav-btn" data-fav="number-base-converter" aria-pressed="false" aria-label="Save to favourites" title="Save to favourites"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9L3.5 9.7l5.9-.8z"/></svg></button>
+  </div>
+</div>
+
+<div class="wrap tool-layout">
+  <div>
+    <div class="panel" id="tool-panel">
+      <div class="panel-bar"><span class="dot" aria-hidden="true"></span>Number Base Converter<span class="pb-right">Runs in your browser</span></div>
+      <div class="panel-body" id="tool-root">
+        <div class="msg msg-err" id="boot-error" hidden data-show="true" role="alert">
+          This tool could not start. It needs JavaScript enabled. If JavaScript is on, reloading the page usually fixes it.
+        </div>
+        <noscript><div class="msg msg-warn" data-show="true">This tool needs JavaScript to run. The instructions and explanations below are still readable without it.</div></noscript>
+        
+<div class="row" style="align-items:flex-end">
+  <div class="field"><label for="val">Number</label><input type="text" id="val" value="255" spellcheck="false" style="font-family:var(--mono)"></div>
+  <div class="field" style="flex:0 0 auto;min-width:150px"><label for="from">From base</label><input type="number" id="from" value="10" min="2" max="36" step="1"></div>
+  <div class="field" style="flex:0 0 auto"><span class="lbl">&nbsp;</span><button class="btn" id="swap" style="width:100%">⇅ Swap</button></div>
+  <div class="field" style="flex:0 0 auto;min-width:150px"><label for="to">To base</label><input type="number" id="to" value="16" min="2" max="36" step="1"></div>
+</div>
+<div class="field">
+  <span class="lbl">Common bases</span>
+  <div class="chips">
+    <button class="chip" data-b="2">Binary — 2</button>
+    <button class="chip" data-b="8">Octal — 8</button>
+    <button class="chip" data-b="10">Decimal — 10</button>
+    <button class="chip" data-b="16">Hex — 16</button>
+    <button class="chip" data-b="36">Base 36</button>
+  </div>
+  <p class="hint">Sets the target base.</p>
+</div>
+<div class="msg" id="msg"></div>
+<div class="result-hero" style="margin-top:6px"><div class="rv" id="r-val" style="word-break:break-all;font-family:var(--mono)">—</div><div class="rl" id="r-lab">—</div></div>
+<div class="actions"><button class="btn" id="copy">Copy result</button></div>
+<h3>Common bases</h3>
+<table class="kv" id="all"></table>
+      </div>
+    </div>
+
+    <div class="ad-slot" data-ad="tool-below-app" data-size="leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-below-app · leaderboard</div>
+</div>
+
+    <div class="prose">
+      <section aria-labelledby="h-howto">
+  <h2 id="h-howto">How to use the Number Base Converter</h2>
+  <ol class="steps"><li>Type the number. Prefixes like <code>0x</code> and <code>0b</code> are accepted and stripped automatically.</li><li>Set the base it is currently in and the base you want.</li><li>The result appears immediately, with the common bases listed underneath.</li></ol>
+</section>
+      <section aria-labelledby="h-s0"><h2 id="h-s0">Why computing uses base 2, 8 and 16</h2><p>Hardware is binary: every value is ultimately a pattern of ones and zeros. But binary is unreadable at any length — one byte takes eight characters, and a 32-bit address takes thirty-two.</p>
+<p>Hexadecimal solves this because 16 is 2⁴, so each hex digit maps to exactly four bits with no arithmetic required. <code>FF</code> is <code>11111111</code>; <code>A</code> is <code>1010</code>. That clean correspondence is why memory addresses, colour codes and byte dumps are all written in hex. Octal (base 8, three bits per digit) served the same purpose on older machines and survives mainly in Unix file permissions.</p></section><section aria-labelledby="h-s1"><h2 id="h-s1">Reading the digits above 9</h2><p>Bases beyond 10 need extra symbols, and the convention is to continue with letters: A = 10, B = 11, through Z = 35. That upper limit is why base 36 is the maximum here — it uses every digit and every letter exactly once.</p>
+<p>Base 36 has a practical use: it produces the shortest identifiers that survive being typed, spoken or put in a URL without special characters. A number that takes 12 decimal digits fits in 8 base-36 characters.</p></section><section aria-labelledby="h-s2"><h2 id="h-s2">Exact conversion of large numbers</h2><p>Converting via a standard floating-point number breaks silently above 2⁵³ − 1. A 64-bit hash or a long identifier converted that way comes back subtly wrong, with no error to warn you.</p>
+<p>This tool uses arbitrary-precision integers instead, so a 256-bit hexadecimal value converts to decimal exactly. The trade-off is that fractional values are not supported — base conversion of fractions produces infinitely repeating expansions in most base pairs, so a general-purpose result would have to be rounded anyway.</p></section>
+      <section aria-labelledby="h-faq">
+  <h2 id="h-faq">Frequently asked questions</h2>
+  <details class="faq-item">
+    <summary>Why does hex use letters?</summary>
+    <div class="faq-a"><p>Base 16 needs sixteen distinct digit symbols, and only ten exist. A through F fill the gap, representing 10 to 15.</p></div>
+  </details><details class="faq-item">
+    <summary>Can it convert decimals or fractions?</summary>
+    <div class="faq-a"><p>No, whole numbers only. Fractions rarely terminate when converted between bases — 0.1 in decimal is infinitely repeating in binary, which is the root of most floating-point surprises.</p></div>
+  </details><details class="faq-item">
+    <summary>How large a number can it handle?</summary>
+    <div class="faq-a"><p>There is no practical limit. Arbitrary-precision arithmetic means a 512-bit value converts exactly, with no rounding or loss.</p></div>
+  </details><details class="faq-item">
+    <summary>What do the 0x and 0b prefixes mean?</summary>
+    <div class="faq-a"><p>They are programming conventions marking hexadecimal and binary literals. They are notation rather than part of the number, so they are stripped automatically.</p></div>
+  </details>
+</section>
+    </div>
+
+    <div class="ad-slot" data-ad="tool-below-content" data-size="leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-below-content · leaderboard</div>
+</div>
+
+    <section aria-labelledby="h-rel">
+  <h2 id="h-rel">Related tools</h2>
+  <div class="grid grid-3"><a class="tool-tile" href="/tools/data-storage-converter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">💾</span><span class="tt-name">Data Storage Converter</span></div>
+  <p class="tt-desc">Convert bytes, kilobytes, megabytes and their binary equivalents.</p>
+  <div class="tt-path">/tools/data-storage-converter</div>
+</a><a class="tool-tile" href="/tools/color-converter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">◐</span><span class="tt-name">Color Converter</span></div>
+  <p class="tt-desc">Convert colours between HEX, RGB, HSL and HSV with a live preview.</p>
+  <div class="tt-path">/tools/color-converter</div>
+</a><a class="tool-tile" href="/tools/base64-encoder">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">⇢</span><span class="tt-name">Base64 Encoder</span></div>
+  <p class="tt-desc">Encode text or files to Base64, with URL-safe output available.</p>
+  <div class="tt-path">/tools/base64-encoder</div>
+</a><a class="tool-tile" href="/tools/uuid-generator">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">⁘</span><span class="tt-name">UUID Generator</span></div>
+  <p class="tt-desc">Generate cryptographically random UUIDs in bulk.</p>
+  <div class="tt-path">/tools/uuid-generator</div>
+</a><a class="tool-tile" href="/tools/timestamp-converter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">⏱</span><span class="tt-name">Timestamp Converter</span></div>
+  <p class="tt-desc">Convert Unix timestamps to dates and back, in any time zone.</p>
+  <div class="tt-path">/tools/timestamp-converter</div>
+</a></div>
+</section>
+  </div>
+  <aside class="tool-aside" aria-label="More tools">
+  <div class="aside-card">
+    <h3>Converters</h3>
+    <ul class="aside-links">
+      <li><a href="/tools/temperature-converter"><span class="al-ico" aria-hidden="true">🌡</span>Temperature Converter</a></li><li><a href="/tools/time-zone-converter"><span class="al-ico" aria-hidden="true">🌍</span>Time Zone Converter</a></li><li><a href="/tools/length-converter"><span class="al-ico" aria-hidden="true">📏</span>Length Converter</a></li><li><a href="/tools/weight-converter"><span class="al-ico" aria-hidden="true">⚖</span>Weight Converter</a></li><li><a href="/tools/speed-converter"><span class="al-ico" aria-hidden="true">🚀</span>Speed Converter</a></li><li><a href="/tools/data-storage-converter"><span class="al-ico" aria-hidden="true">💾</span>Data Storage Converter</a></li>
+      <li><a href="/tools/converters"><span class="al-ico" aria-hidden="true">→</span><strong>All 7 converters tools</strong></a></li>
+    </ul>
+  </div>
+  <div class="ad-slot" data-ad="tool-sidebar" data-size="rectangle">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-sidebar · rectangle</div>
+</div>
+  <div class="aside-card" data-shelf="recent" hidden>
+    <h3>Recently used</h3>
+    <div class="grid" data-shelf-body style="gap:8px"></div>
+  </div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="/" style="margin-bottom:10px"><span class="brand-mark" aria-hidden="true">MT</span>MEGA TOOLS</a>
+        <p>Free tools for everything you do online. 62 free tools, no sign-up, and most of them run entirely in your browser.</p>
+      </div>
+      
+    <div>
+      <h4>PDF</h4>
+      <ul><li><a href="/tools/pdf-merger">PDF Merger</a></li><li><a href="/tools/pdf-compressor">PDF Compressor</a></li><li><a href="/tools/pdf-to-jpg">PDF to JPG</a></li><li><a href="/tools/pdf-splitter">PDF Splitter</a></li><li><a href="/tools/jpg-to-pdf">JPG to PDF</a></li><li><a href="/tools/pdf-to-text">PDF to Text</a></li>
+        <li><a href="/tools/pdf"><strong>All pdf tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Image</h4>
+      <ul><li><a href="/tools/image-compressor">Image Compressor</a></li><li><a href="/tools/image-resizer">Image Resizer</a></li><li><a href="/tools/jpg-to-png">JPG to PNG</a></li><li><a href="/tools/png-to-jpg">PNG to JPG</a></li><li><a href="/tools/image-cropper">Image Cropper</a></li><li><a href="/tools/webp-converter">WebP Converter</a></li>
+        <li><a href="/tools/image"><strong>All image tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Developer</h4>
+      <ul><li><a href="/tools/json-formatter">JSON Formatter</a></li><li><a href="/tools/json-validator">JSON Validator</a></li><li><a href="/tools/base64-encoder">Base64 Encoder</a></li><li><a href="/tools/base64-decoder">Base64 Decoder</a></li><li><a href="/tools/timestamp-converter">Timestamp Converter</a></li><li><a href="/tools/regex-tester">Regex Tester</a></li>
+        <li><a href="/tools/developer"><strong>All developer tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Calculators</h4>
+      <ul><li><a href="/tools/age-calculator">Age Calculator</a></li><li><a href="/tools/percentage-calculator">Percentage Calculator</a></li><li><a href="/tools/mortgage-calculator">Mortgage Calculator</a></li><li><a href="/tools/loan-calculator">Loan Calculator</a></li><li><a href="/tools/bmi-calculator">BMI Calculator</a></li><li><a href="/tools/salary-calculator">Salary Calculator</a></li>
+        <li><a href="/tools/calculators"><strong>All calculators tools →</strong></a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="foot-grid" style="margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div>
+        <h4>Categories</h4>
+        <ul><li><a href="/tools/pdf">PDF Tools</a></li><li><a href="/tools/image">Image Tools</a></li><li><a href="/tools/developer">Developer Tools</a></li><li><a href="/tools/calculators">Calculators</a></li><li><a href="/tools/text">Text Tools</a></li><li><a href="/tools/converters">Converters</a></li><li><a href="/tools/security">Security &amp; Generators</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other</h4>
+        <ul>
+          <li><a href="/tools">All tools</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Mega Tools. Free to use.</span>
+      <span>62 tools across 7 categories · updated 2026-08-25</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/tool-runtime.js" defer></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    
+    (function () {
+    var DIGITS = '0123456789abcdefghijklmnopqrstuvwxyz';
+
+    function parseBig(str, base) {
+      var neg = str[0] === '-';
+      var s = (neg ? str.slice(1) : str).toLowerCase();
+      var v = 0n, b = BigInt(base);
+      for (var i = 0; i < s.length; i++) {
+        var d = DIGITS.indexOf(s[i]);
+        if (d === -1 || d >= base) return { err: '“' + s[i] + '” is not a valid digit in base ' + base + '.' };
+        v = v * b + BigInt(d);
+      }
+      return { v: neg ? -v : v };
+    }
+    function toBase(v, base) {
+      if (v === 0n) return '0';
+      var neg = v < 0n;
+      var n = neg ? -v : v, b = BigInt(base), out = '';
+      while (n > 0n) { out = DIGITS[Number(n % b)] + out; n = n / b; }
+      return (neg ? '-' : '') + out;
+    }
+
+    function run() {
+      var raw = MT.$('#val').value.trim().replace(/[\s_,]/g, '');
+      var from = Math.round(MT.num('#from', 10)), to = Math.round(MT.num('#to', 16));
+      if (!raw) { MT.msg('#msg', 'Enter a number to convert.', 'warn'); return; }
+      if (!(from >= 2 && from <= 36) || !(to >= 2 && to <= 36)) {
+        MT.msg('#msg', 'Bases must be between 2 and 36.', 'err'); return;
+      }
+      // tolerate common prefixes
+      var s = raw;
+      if (from === 16 && /^0x/i.test(s)) s = s.slice(2);
+      if (from === 2 && /^0b/i.test(s)) s = s.slice(2);
+      if (from === 8 && /^0o/i.test(s)) s = s.slice(2);
+      if (/\./.test(s)) { MT.msg('#msg', 'This converter handles whole numbers only. Remove the decimal point.', 'err'); return; }
+
+      var r = parseBig(s, from);
+      if (r.err) { MT.msg('#msg', r.err, 'err'); return; }
+      MT.clearMsg('#msg');
+      var out = toBase(r.v, to);
+      MT.$('#r-val').textContent = out.toUpperCase();
+      MT.$('#r-lab').textContent = s + ' in base ' + from + ' = ' + out.toUpperCase() + ' in base ' + to;
+
+      var rows = [[2, 'Binary'], [8, 'Octal'], [10, 'Decimal'], [16, 'Hexadecimal'], [36, 'Base 36']];
+      MT.$('#all').innerHTML = rows.map(function (b) {
+        var v = toBase(r.v, b[0]);
+        return '<tr' + (b[0] === to ? ' style="background:var(--accent-wash)"' : '') + '><td>' + b[1] + ' (base ' + b[0] + ')</td>' +
+          '<td style="font-family:var(--mono);word-break:break-all;text-align:right">' + v.toUpperCase() + '</td></tr>';
+      }).join('') + '<tr><td>Bit length</td><td>' + toBase(r.v < 0n ? -r.v : r.v, 2).replace('-', '').length + '</td></tr>';
+      MT.done({ from: from, to: to });
+    }
+    MT.$$('#val, #from, #to').forEach(function (el) { el.addEventListener('input', run); });
+    MT.$$('[data-b]').forEach(function (c) {
+      c.addEventListener('click', function () { MT.$('#to').value = c.dataset.b; run(); });
+    });
+    MT.on('#swap', 'click', function () {
+      var f = MT.$('#from').value;
+      MT.$('#from').value = MT.$('#to').value;
+      MT.$('#to').value = f;
+      MT.$('#val').value = MT.$('#r-val').textContent.replace('—', '');
+      run();
+    });
+    MT.on('#copy', 'click', function (e) { MT.copy(MT.$('#r-val').textContent, e.currentTarget); });
+    run();
+  })();
+  } catch (err) {
+    console.error('Tool failed to start:', err);
+    var box = document.getElementById('boot-error');
+    if (box) { box.hidden = false; }
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Slug Generator — Create URL-Friendly Slugs Online | Mega Tools</title>
+<meta name="description" content="Convert titles into clean URL slugs. Transliterates accents, strips punctuation, removes stop words optionally, and enforces a maximum length.">
+<link rel="canonical" href="https://whitemouseai.com/tools/slug-generator">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mega Tools">
+<meta property="og:title" content="Slug Generator — Create URL-Friendly Slugs Online | Mega Tools">
+<meta property="og:description" content="Convert titles into clean URL slugs. Transliterates accents, strips punctuation, removes stop words optionally, and enforces a maximum length.">
+<meta property="og:url" content="https://whitemouseai.com/tools/slug-generator">
+<meta property="og:image" content="https://whitemouseai.com/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Slug Generator — Create URL-Friendly Slugs Online | Mega Tools">
+<meta name="twitter:description" content="Convert titles into clean URL slugs. Transliterates accents, strips punctuation, removes stop words optionally, and enforces a maximum length.">
+<meta name="twitter:image" content="https://whitemouseai.com/og.svg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/site.css">
+
+<script src="/assets/shell.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Slug Generator","url":"https://whitemouseai.com/tools/slug-generator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any — runs in a web browser","description":"Convert titles into clean URL slugs. Transliterates accents, strips punctuation, removes stop words optionally, and enforces a maximum length.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"isAccessibleForFree":true,"publisher":{"@type":"Organization","name":"Mega Tools","url":"https://whitemouseai.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://whitemouseai.com"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://whitemouseai.com/tools"},{"@type":"ListItem","position":3,"name":"Text Tools","item":"https://whitemouseai.com/tools/text"},{"@type":"ListItem","position":4,"name":"Slug Generator","item":"https://whitemouseai.com/tools/slug-generator"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Hyphens or underscores?","acceptedAnswer":{"@type":"Answer","text":"Hyphens, for anything public-facing. Google has stated it treats hyphens as word separators and underscores as joiners, so my_blog_post may be read as one long token."}},{"@type":"Question","name":"How long should a slug be?","acceptedAnswer":{"@type":"Answer","text":"Long enough to describe the page, short enough to read at a glance. Under 60 characters is a reasonable ceiling; there is no technical limit that matters at these lengths."}},{"@type":"Question","name":"Why is my slug empty?","acceptedAnswer":{"@type":"Answer","text":"The input contained no Latin letters or digits after transliteration — usually a title in a non-Latin script or one made only of punctuation. Romanise it manually, or write an English slug."}},{"@type":"Question","name":"Can I convert a whole list at once?","acceptedAnswer":{"@type":"Answer","text":"Yes. Put one title per line and each is converted separately, keeping the same order in the output."}}]}]}</script>
+</head>
+<body data-page="tool" data-tool="slug-generator">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-in">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MT</span>MEGA TOOLS</a>
+    <nav class="header-nav" aria-label="Categories">
+      <a href="/tools">All tools</a>
+      <a href="/tools/pdf">PDF</a>
+      <a href="/tools/image">Image</a>
+      <a href="/tools/developer">Developer</a>
+      <a href="/tools/calculators">Calculators</a>
+    </nav>
+    <div class="header-spacer"></div>
+    <div class="hsearch">
+      <svg class="mag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <label class="sr-only" for="hs">Search tools</label>
+      <input type="search" id="hs" data-search-input placeholder="Search tools" autocomplete="off" spellcheck="false">
+      <span class="slash" aria-hidden="true">/</span>
+    </div>
+    <button class="icon-btn" data-theme-toggle aria-label="Switch between light, dark and system theme" title="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+  </div>
+</header>
+<main id="main">
+<div class="wrap tool-head">
+  <nav class="crumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <li><a href="/tools">Tools</a></li>
+    <li><a href="/tools/text">Text Tools</a></li>
+    <li><span aria-current="page">Slug Generator</span></li>
+  </ol>
+</nav>
+  <div class="tool-title-row">
+    <span class="th-ico" aria-hidden="true">/</span>
+    <div style="flex:1 1 auto;min-width:0">
+      <span class="path-chip">/tools/slug-generator</span>
+      <h1>Slug Generator</h1>
+      <p class="lede">Convert a headline into the URL segment that should sit under it. Accented characters are transliterated rather than dropped, so nothing turns into an empty slug.</p>
+    </div>
+    <button class="icon-btn fav-btn" data-fav="slug-generator" aria-pressed="false" aria-label="Save to favourites" title="Save to favourites"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" aria-hidden="true"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 17l-5.2 2.7 1-5.9L3.5 9.7l5.9-.8z"/></svg></button>
+  </div>
+</div>
+
+<div class="wrap tool-layout">
+  <div>
+    <div class="panel" id="tool-panel">
+      <div class="panel-bar"><span class="dot" aria-hidden="true"></span>Slug Generator<span class="pb-right">Runs in your browser</span></div>
+      <div class="panel-body" id="tool-root">
+        <div class="msg msg-err" id="boot-error" hidden data-show="true" role="alert">
+          This tool could not start. It needs JavaScript enabled. If JavaScript is on, reloading the page usually fixes it.
+        </div>
+        <noscript><div class="msg msg-warn" data-show="true">This tool needs JavaScript to run. The instructions and explanations below are still readable without it.</div></noscript>
+        
+<div class="field">
+  <label for="in">Title or heading — one per line for a batch</label>
+  <textarea id="in" class="plain" spellcheck="false" style="min-height:120px" placeholder="10 Réasons Why Café Culture Is Thriving!"></textarea>
+</div>
+<div class="row">
+  <div class="field" style="flex:0 0 auto;min-width:140px"><label for="sep">Separator</label>
+    <select id="sep"><option value="-">Hyphen  -</option><option value="_">Underscore  _</option></select>
+  </div>
+  <div class="field" style="flex:0 0 auto;min-width:150px"><label for="max">Max length</label><input type="number" id="max" value="0" min="0" max="200" step="5"><p class="hint">0 means no limit</p></div>
+</div>
+<div class="row tight" style="gap:16px;flex-wrap:wrap">
+  <div class="checkline" style="margin:0"><input type="checkbox" id="stop"><label for="stop">Remove common stop words</label></div>
+  <div class="checkline" style="margin:0"><input type="checkbox" id="nums" checked><label for="nums">Keep numbers</label></div>
+</div>
+<div class="actions">
+  <button class="btn btn-primary" id="go">Generate slug</button>
+  <button class="btn" id="copy">Copy</button>
+  <button class="btn btn-ghost" id="clear">Clear</button>
+</div>
+<div class="msg" id="msg"></div>
+<div class="field" style="margin-top:16px">
+  <label for="out">Slug</label>
+  <pre class="out" id="out" data-empty="Your slug appears here." tabindex="0"></pre>
+</div>
+      </div>
+    </div>
+
+    <div class="ad-slot" data-ad="tool-below-app" data-size="leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-below-app · leaderboard</div>
+</div>
+
+    <div class="prose">
+      <section aria-labelledby="h-howto">
+  <h2 id="h-howto">How to use the Slug Generator</h2>
+  <ol class="steps"><li>Paste a title. Add several lines to convert a batch at once.</li><li>Choose a separator and, if you want, a maximum length. Truncation snaps back to a word boundary rather than cutting mid-word.</li><li>Press <b>Generate slug</b> and copy the result.</li></ol>
+</section>
+      <section aria-labelledby="h-s0"><h2 id="h-s0">What makes a good slug</h2><p>A slug is the human-readable part of a URL. Good ones share a few properties:</p>
+<ul>
+<li><b>Lowercase.</b> Some servers treat URLs as case-sensitive, so mixed case creates duplicate addresses for one page.</li>
+<li><b>Hyphens, not underscores.</b> Search engines have long treated hyphens as word separators and underscores as joiners.</li>
+<li><b>Short but meaningful.</b> Three to six words is a good target. The slug should make sense read on its own.</li>
+<li><b>Stable.</b> Changing a slug breaks every existing link. If you must change one, redirect the old address.</li>
+</ul>
+<p>Do not put a date in a slug unless the content is genuinely tied to a date — it makes an article look stale the following year.</p></section><section aria-labelledby="h-s1"><h2 id="h-s1">Transliteration versus deletion</h2><p>Naïve slug functions strip anything that is not a–z, which turns "Café" into "caf" and a Greek headline into nothing at all. This tool normalises to NFKD first, separating accents from their base letters so the accents can be removed while the letters survive: café → cafe, naïve → naive, Zürich → zurich.</p>
+<p>Ligatures and letters with strokes need explicit mapping, since decomposition does not cover them — ß becomes ss, æ becomes ae, ø becomes o. Non-Latin scripts cannot be handled this way at all. Cyrillic, Greek, Arabic and CJK need real romanisation, so the tool warns you rather than silently producing an empty slug.</p></section><section aria-labelledby="h-s2"><h2 id="h-s2">Should stop words be removed?</h2><p>Removing "the", "of" and "a" makes slugs shorter and denser. It also makes some of them read oddly — "how-to-make-bread" becomes "how-make-bread". Search engines handle both fine, so this is a readability decision rather than a ranking one.</p>
+<p>The option is off by default. When it is on, the tool keeps the original words if removing stop words would leave nothing behind.</p></section>
+      <section aria-labelledby="h-faq">
+  <h2 id="h-faq">Frequently asked questions</h2>
+  <details class="faq-item">
+    <summary>Hyphens or underscores?</summary>
+    <div class="faq-a"><p>Hyphens, for anything public-facing. Google has stated it treats hyphens as word separators and underscores as joiners, so my_blog_post may be read as one long token.</p></div>
+  </details><details class="faq-item">
+    <summary>How long should a slug be?</summary>
+    <div class="faq-a"><p>Long enough to describe the page, short enough to read at a glance. Under 60 characters is a reasonable ceiling; there is no technical limit that matters at these lengths.</p></div>
+  </details><details class="faq-item">
+    <summary>Why is my slug empty?</summary>
+    <div class="faq-a"><p>The input contained no Latin letters or digits after transliteration — usually a title in a non-Latin script or one made only of punctuation. Romanise it manually, or write an English slug.</p></div>
+  </details><details class="faq-item">
+    <summary>Can I convert a whole list at once?</summary>
+    <div class="faq-a"><p>Yes. Put one title per line and each is converted separately, keeping the same order in the output.</p></div>
+  </details>
+</section>
+    </div>
+
+    <div class="ad-slot" data-ad="tool-below-content" data-size="leaderboard">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-below-content · leaderboard</div>
+</div>
+
+    <section aria-labelledby="h-rel">
+  <h2 id="h-rel">Related tools</h2>
+  <div class="grid grid-3"><a class="tool-tile" href="/tools/case-converter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">Aa</span><span class="tt-name">Case Converter</span></div>
+  <p class="tt-desc">Convert text between eight cases, including programming styles.</p>
+  <div class="tt-path">/tools/case-converter</div>
+</a><a class="tool-tile" href="/tools/url-encoder">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">⇗</span><span class="tt-name">URL Encoder</span></div>
+  <p class="tt-desc">Percent-encode text for URLs, query strings and form data.</p>
+  <div class="tt-path">/tools/url-encoder</div>
+</a><a class="tool-tile" href="/tools/word-counter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">📝</span><span class="tt-name">Word Counter</span></div>
+  <p class="tt-desc">Count words, characters, sentences and reading time as you type.</p>
+  <div class="tt-path">/tools/word-counter</div>
+</a><a class="tool-tile" href="/tools/text-sorter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">↕</span><span class="tt-name">Text Sorter</span></div>
+  <p class="tt-desc">Sort lines alphabetically, numerically, by length or at random.</p>
+  <div class="tt-path">/tools/text-sorter</div>
+</a><a class="tool-tile" href="/tools/character-counter">
+  
+  <div class="tt-top"><span class="tt-ico" aria-hidden="true">#</span><span class="tt-name">Character Counter</span></div>
+  <p class="tt-desc">Count characters against a limit, with a live countdown.</p>
+  <div class="tt-path">/tools/character-counter</div>
+</a></div>
+</section>
+  </div>
+  <aside class="tool-aside" aria-label="More tools">
+  <div class="aside-card">
+    <h3>Text Tools</h3>
+    <ul class="aside-links">
+      <li><a href="/tools/word-counter"><span class="al-ico" aria-hidden="true">📝</span>Word Counter</a></li><li><a href="/tools/case-converter"><span class="al-ico" aria-hidden="true">Aa</span>Case Converter</a></li><li><a href="/tools/character-counter"><span class="al-ico" aria-hidden="true">#</span>Character Counter</a></li><li><a href="/tools/diff-checker"><span class="al-ico" aria-hidden="true">±</span>Diff Checker</a></li><li><a href="/tools/lorem-ipsum-generator"><span class="al-ico" aria-hidden="true">¶</span>Lorem Ipsum Generator</a></li><li><a href="/tools/remove-duplicate-lines"><span class="al-ico" aria-hidden="true">⧉</span>Remove Duplicate Lines</a></li><li><a href="/tools/text-sorter"><span class="al-ico" aria-hidden="true">↕</span>Text Sorter</a></li><li><a href="/tools/text-reverser"><span class="al-ico" aria-hidden="true">⇄</span>Text Reverser</a></li>
+      <li><a href="/tools/text"><span class="al-ico" aria-hidden="true">→</span><strong>All 9 text tools</strong></a></li>
+    </ul>
+  </div>
+  <div class="ad-slot" data-ad="tool-sidebar" data-size="rectangle">
+  <span class="ad-label">Advertisement</span>
+  <div class="ad-box" role="presentation">Ad slot · tool-sidebar · rectangle</div>
+</div>
+  <div class="aside-card" data-shelf="recent" hidden>
+    <h3>Recently used</h3>
+    <div class="grid" data-shelf-body style="gap:8px"></div>
+  </div>
+</aside>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <a class="brand" href="/" style="margin-bottom:10px"><span class="brand-mark" aria-hidden="true">MT</span>MEGA TOOLS</a>
+        <p>Free tools for everything you do online. 62 free tools, no sign-up, and most of them run entirely in your browser.</p>
+      </div>
+      
+    <div>
+      <h4>PDF</h4>
+      <ul><li><a href="/tools/pdf-merger">PDF Merger</a></li><li><a href="/tools/pdf-compressor">PDF Compressor</a></li><li><a href="/tools/pdf-to-jpg">PDF to JPG</a></li><li><a href="/tools/pdf-splitter">PDF Splitter</a></li><li><a href="/tools/jpg-to-pdf">JPG to PDF</a></li><li><a href="/tools/pdf-to-text">PDF to Text</a></li>
+        <li><a href="/tools/pdf"><strong>All pdf tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Image</h4>
+      <ul><li><a href="/tools/image-compressor">Image Compressor</a></li><li><a href="/tools/image-resizer">Image Resizer</a></li><li><a href="/tools/jpg-to-png">JPG to PNG</a></li><li><a href="/tools/png-to-jpg">PNG to JPG</a></li><li><a href="/tools/image-cropper">Image Cropper</a></li><li><a href="/tools/webp-converter">WebP Converter</a></li>
+        <li><a href="/tools/image"><strong>All image tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Developer</h4>
+      <ul><li><a href="/tools/json-formatter">JSON Formatter</a></li><li><a href="/tools/json-validator">JSON Validator</a></li><li><a href="/tools/base64-encoder">Base64 Encoder</a></li><li><a href="/tools/base64-decoder">Base64 Decoder</a></li><li><a href="/tools/timestamp-converter">Timestamp Converter</a></li><li><a href="/tools/regex-tester">Regex Tester</a></li>
+        <li><a href="/tools/developer"><strong>All developer tools →</strong></a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Calculators</h4>
+      <ul><li><a href="/tools/age-calculator">Age Calculator</a></li><li><a href="/tools/percentage-calculator">Percentage Calculator</a></li><li><a href="/tools/mortgage-calculator">Mortgage Calculator</a></li><li><a href="/tools/loan-calculator">Loan Calculator</a></li><li><a href="/tools/bmi-calculator">BMI Calculator</a></li><li><a href="/tools/salary-calculator">Salary Calculator</a></li>
+        <li><a href="/tools/calculators"><strong>All calculators tools →</strong></a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="foot-grid" style="margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      <div>
+        <h4>Categories</h4>
+        <ul><li><a href="/tools/pdf">PDF Tools</a></li><li><a href="/tools/image">Image Tools</a></li><li><a href="/tools/developer">Developer Tools</a></li><li><a href="/tools/calculators">Calculators</a></li><li><a href="/tools/text">Text Tools</a></li><li><a href="/tools/converters">Converters</a></li><li><a href="/tools/security">Security &amp; Generators</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+          <li><a href="/terms">Terms</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Other</h4>
+        <ul>
+          <li><a href="/tools">All tools</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Mega Tools. Free to use.</span>
+      <span>62 tools across 7 categories · updated 2026-08-25</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/tool-runtime.js" defer></script>
+<script defer>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    
+    (function () {
+    var STOP = 'a an the and or but of to in on at for with is are was were be been it this that as by from not your you'.split(' ');
+
+    function slugify(text) {
+      var sep = MT.$('#sep').value;
+      var s = text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '');
+      s = s.replace(/ß/g, 'ss').replace(/æ/gi, 'ae').replace(/œ/gi, 'oe').replace(/ø/gi, 'o').replace(/đ/gi, 'd').replace(/ł/gi, 'l').replace(/&/g, ' and ');
+      s = s.toLowerCase();
+      s = s.replace(MT.$('#nums').checked ? /[^a-z0-9]+/g : /[^a-z]+/g, ' ').trim();
+      var words = s.split(/\s+/).filter(Boolean);
+      if (MT.$('#stop').checked) {
+        var kept = words.filter(function (w) { return STOP.indexOf(w) === -1; });
+        if (kept.length) words = kept;
+      }
+      var slug = words.join(sep);
+      var max = MT.num('#max', 0);
+      if (max > 0 && slug.length > max) {
+        slug = slug.slice(0, max);
+        var cut = slug.lastIndexOf(sep);
+        if (cut > max * 0.5) slug = slug.slice(0, cut);
+      }
+      return slug.replace(new RegExp('^\\' + sep + '+|\\' + sep + '+$', 'g'), '');
+    }
+
+    function run() {
+      var raw = MT.$('#in').value;
+      if (!raw.trim()) { MT.msg('#msg', 'Enter a title to convert.', 'warn'); return; }
+      var lines = raw.split('\n').filter(function (l) { return l.trim(); });
+      var slugs = lines.map(slugify);
+      var empty = slugs.filter(function (s) { return !s; }).length;
+      MT.$('#out').textContent = slugs.join('\n');
+      if (empty) {
+        MT.msg('#msg', MT.plural(empty, 'line') + ' produced an empty slug — the text contained no characters that survive transliteration. Non-Latin scripts need manual romanisation.', 'warn');
+      } else {
+        MT.msg('#msg', slugs.length === 1
+          ? 'Slug is ' + slugs[0].length + ' characters.'
+          : MT.plural(slugs.length, 'slug') + ' generated.', 'ok');
+      }
+      MT.done({ count: slugs.length });
+    }
+    MT.on('#go', 'click', MT.guard(run));
+    MT.on('#in', 'input', function () { if (MT.$('#out').textContent) run(); });
+    MT.$$('#sep, #max, #stop, #nums').forEach(function (el) {
+      el.addEventListener('change', function () { if (MT.$('#out').textContent) run(); });
+    });
+    MT.on('#copy', 'click', function (e) { MT.copy(MT.$('#out').textContent, e.currentTarget); });
+    MT.on('#clear', 'click', function () {
+      MT.$('#in').value = ''; MT.$('#out').textContent = ''; MT.clearMsg('#msg'); MT.$('#in').focus();
+    });
+  })();
+  } catch (err) {
+    console.error('Tool failed to start:', err);
+    var box = document.getElementById('boot-error');
+    if (box) { box.hidden = false; }
+  }
+});
+</script>
+</body>
+</html>
