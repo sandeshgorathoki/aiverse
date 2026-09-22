@@ -937,6 +937,13 @@ async function build() {
   for (const f of ['site.css', 'shell.js', 'tool-runtime.js']) {
     await cp(path.join(SRC, 'assets', f), path.join(OUT, 'assets', f));
   }
+
+// AdSense ads.txt
+await cp(
+  path.join(ROOT, '..', 'public', 'ads.txt'),
+  path.join(OUT, 'ads.txt')
+);
+
   await writeFile(path.join(OUT, 'favicon.svg'), FAVICON);
   await writeFile(path.join(OUT, 'og.svg'), OG_IMAGE);
 
